@@ -29,6 +29,7 @@ const MChatRoom = () => {
     if (mtext === "") {
       return 0;
     }
+    setmText("");
     const auth = firebase.auth();
     const { uid, photoURL, displayName } = auth.currentUser;
     await messages.add({
@@ -38,7 +39,7 @@ const MChatRoom = () => {
       photoURL,
       displayName,
     });
-    setmText("");
+
     endRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
