@@ -46,7 +46,7 @@ const MChatRoom = () => {
   return (
     <Container
       sx={(theme) => ({
-        pt: 10,
+        py: 10,
         bgcolor: "background.default",
         [theme.breakpoints.up("sm")]: {
           maxWidth: 480,
