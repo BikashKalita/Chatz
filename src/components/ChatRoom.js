@@ -48,9 +48,12 @@ const MChatRoom = () => {
       sx={(theme) => ({
         pt: 10,
         bgcolor: "background.default",
-        overflowY: "none",
         [theme.breakpoints.up("sm")]: {
           maxWidth: 480,
+          overflowY: "none",
+        },
+        [theme.breakpoints.down("sm")]: {
+          overflowY: "scroll",
         },
       })}
       // sx={[
